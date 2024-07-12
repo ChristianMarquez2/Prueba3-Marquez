@@ -5,7 +5,6 @@ public class MainApplication {
         JFrame frame = new JFrame("Aplicación Principal");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Aquí agregamos los componentes y funcionalidades necesarios
         JPanel mainPanel = new JPanel();
         mainPanel.add(new JLabel("Bienvenido a la aplicación principal"));
 

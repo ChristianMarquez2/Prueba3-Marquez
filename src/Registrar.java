@@ -48,7 +48,7 @@ public class Registrar {
                              "VALUES (?, ?, ?, ?, ?, ?, ?)")) {
 
             pstmt.setString(1, historialClinico);
-            pstmt.setInt(2, 0); // Opcional: Aquí podrías usar algún generador de IDs automáticos
+            pstmt.setInt(2, 0);
             pstmt.setString(3, nombre);
             pstmt.setString(4, apellido);
             pstmt.setString(5, telefono);

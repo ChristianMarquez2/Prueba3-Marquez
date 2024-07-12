@@ -14,7 +14,7 @@ public class Login extends JFrame {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/sistema_hospitalario";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = ""; // Cambia esto a tu contraseña de MySQL
+    private static final String DB_PASSWORD = "";
 
     public Login() {
         setTitle("Login");
@@ -59,8 +59,8 @@ public class Login extends JFrame {
                 String password = new String(passwordField.getPassword());
 
                 if (validateCredentials(username, password)) {
-                    dispose(); // Cierra la ventana de login
-                    mostrarAplicacion(); // Muestra la aplicación principal
+                    dispose();
+                    mostrarAplicacion();
                 } else {
                     JOptionPane.showMessageDialog(Login.this, "Credenciales incorrectas", "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -104,7 +104,7 @@ public class Login extends JFrame {
     }
 
     private void mostrarAplicacion() {
-        // Mostrar la aplicación principal después de iniciar sesión
+
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 new MainApplication().start();
